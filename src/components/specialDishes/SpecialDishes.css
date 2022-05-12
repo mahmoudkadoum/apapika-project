@@ -1,0 +1,315 @@
+
+.SpecialDishes {
+    position: relative;
+    height: 130vh;
+    width: 100%;
+}
+.Rectangle-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 130vh;
+    flex-grow: 0;
+    /* margin-top: -10vh; */
+    padding: 0 0 0 0;
+    background-color: #fff5ec;
+    z-index: -1000;
+}
+.Screen-2-Header {
+    position: absolute;
+    top : 22.5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5vw;
+    background-color: transparent;
+}
+.Screen-2-Header h1::after{
+    height: 140% !important;
+}
+.Screen-2-Header p {
+    color: #707070;
+    max-width: 29vw;
+    font-family: Poppins;
+
+    line-height: 1.67;
+
+
+    text-transform: capitalize;
+}
+.SpecialDishes .pattern2 {
+    position: absolute;
+    left: 20px;
+    top: 44vh;
+    width: 12.5vw;
+}
+.SpecialDishes .pattern3 {
+    position: absolute;
+    right: 35vw;
+    top: 83vh;
+    width: 12.5vw;
+}
+.dishesContainer {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5vw;
+    top: 50vh;
+    max-width: 80vw;
+    flex-wrap: wrap;
+}
+.dish {
+    width: 30vw;
+    height: 30vw;
+    background-color: #ffdde1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 100;
+}
+.triangle-1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 30vw solid white;
+    border-right: 30vw solid transparent;
+}
+.dish img {
+    position: absolute;
+    height: 94%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dish h3 {
+    position: absolute;
+    top: 7.5%;
+    left: 7.5%;
+    width: 10%;
+    font-family: K2D;
+    font-size: 2.1em;
+    font-weight: 600;
+    text-align: left;
+    color: #332b25;
+    z-index: 100;
+}
+.allComponents {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: .5vw;
+    flex-wrap: wrap-reverse;
+    width: 20vw;
+}
+.allComponents .component{
+    background-color: #ebecf59f;
+    border-radius: 15px;
+    padding: 5px;
+    z-index: 100;
+}
+.seeMoreBtn span {
+    position: relative;
+    color: #332b25;
+    font-family: K2D;
+    text-transform: capitalize;
+}
+.seeMoreBtn span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: -22px;
+    background-color: #332b25;
+}
+.seeMoreBtn span::after {
+    content: url('../../assets/arrow.png');
+    position: absolute;
+    right: 0%;
+    top: -30px;
+    /* background-color: #332b25; */
+    z-index: 100;
+}
+.seeMoreBtn{
+    position: relative;
+}
+.circle-1 {
+    background-color: #332b25;
+    position: absolute;
+    top: -37px;
+    right: -6px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+
+
+
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .Screen-2-Header {
+        margin-top: 40px;
+    }
+    .Screen-2-Header p {
+        max-width: 70vw;
+        font-size: .8em;
+    }
+    .dishesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2.5vw;
+        top: 420px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 80vw;
+    }
+    .dish h3 {
+        top: 7.5%;
+        left: 7.5%;
+        width: 10%;
+        font-size: .8em;
+        font-weight: 600;
+    }
+    .allComponents {
+        bottom: 10%;
+        left: 5%;
+        align-items: flex-start;
+        gap: .5vw;
+        flex-wrap: wrap-reverse;
+        width: 25vw;
+    }
+    .allComponents .component{
+        padding: 1px;
+        font-size: .5em;
+    }
+    .seeMoreBtn{
+        margin-top: 30px;
+    }
+
+    .Screen-2-Header {
+        position: absolute;
+        top : 22.5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2.5vw;
+        background-color: transparent;
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .Screen-2-Header p {
+        max-width: 70vw;
+        font-size: .8em;
+    }
+    .dishesContainer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2.5vw;
+        top: 55vh;
+        left: 0%;
+        max-width: 80vw;
+    }
+    .dish h3 {
+        top: 7.5%;
+        left: 7.5%;
+        width: 10%;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .dish {
+        width: 30vw;
+        height: 30vw;
+    }
+    .seeMoreBtn{
+        margin-top: 40px;
+    }
+    .allComponents {
+    bottom: 10%;
+    left: 5%;
+    align-items: flex-start;
+    gap: .5vw;
+    flex-wrap: wrap-reverse;
+    width: 20vw;
+}
+.allComponents .component{
+    padding: 1px;
+    font-size: .7em;
+}
+.seeMoreBtn{
+    margin-top: 35px;
+}
+.Screen-2-Header {
+    position: absolute;
+    top : 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 2.5vw;
+    width: 70vw;
+    background-color: transparent;
+}
+
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .Screen-2-Header {
+        margin-top: 40px;
+    }
+    .Screen-2-Header p {
+        max-width: 50vw;
+        font-size: .8em;
+    }
+    .dishesContainer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2.5vw;
+        top: 55vh;
+        left: 0%;
+        max-width: 80vw;
+    }
+    .dish h3 {
+        top: 7.5%;
+        left: 7.5%;
+        width: 10%;
+        font-size: .8em;
+        font-weight: 600;
+    }
+    .dish {
+        width: 30vw;
+        height: 30vw;
+    }
+    .seeMoreBtn{
+        margin-top: 40px;
+    }
+.allComponents {
+    bottom: 10%;
+    left: 5%;
+    align-items: flex-start;
+    gap: .5vw;
+    flex-wrap: wrap-reverse;
+    width: 20vw;
+}
+.allComponents .component{
+    padding: 1px;
+    font-size: .7em;
+}
+}

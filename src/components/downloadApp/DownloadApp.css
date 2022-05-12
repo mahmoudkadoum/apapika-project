@@ -1,0 +1,102 @@
+.DownloadApp {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.Rectangle-4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    flex-grow: 0;
+    padding: 0 0 0 0;
+    background-color: #fff5ec;
+    z-index: -1000;
+}
+.pattern4 {
+    position: absolute;
+    top: 7.5vh;
+    right: 7vw;
+    width: 37.5vw;
+}
+.screen-3 {
+    display: flex;
+    gap: 10vw;
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+.screen-3 .left{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5vh;
+}
+.screen-3 .left p{
+    max-width: 30vw;
+    text-transform: capitalize;
+    font-family: Poppins;
+    line-height: 1.67;
+    text-align: left;
+    color: #000;
+    font-size: 1.1em;
+}
+.screen-3 .left .downloadBtns {
+    display: flex;
+    gap: 1.5vw;
+}
+.screen-3 .left .downloadBtns .Btn {
+    width: 9vw;
+}
+.screen-3 .mobileMokup {
+    width: 24vw;
+    margin-top: 5vh;
+}
+
+
+
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .screen-3 .left p{
+        max-width: 40vw;
+        font-size: .9em;
+    }
+    .screen-3 h1 {
+        max-width: 40vw;
+    }
+    .screen-3 .mobileMokup {
+        width: 24vw;
+        margin-top: 5vh;
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .screen-3 .left p{
+        max-width: 40vw;
+        font-size: .9em;
+    }
+    .screen-3 h1 {
+        max-width: 40vw;
+    }
+    .screen-3 .mobileMokup {
+        width: 24vw;
+        margin-top: 5vh;
+    }
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .screen-3 .left p{
+        max-width: 40vw;
+        font-size: .9em;
+    }
+    .screen-3 h1 {
+        max-width: 40vw;
+    }
+    .screen-3 .mobileMokup {
+        width: 24vw;
+        margin-top: 5vh;
+    }
+}

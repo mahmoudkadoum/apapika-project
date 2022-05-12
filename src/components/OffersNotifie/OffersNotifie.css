@@ -1,0 +1,229 @@
+.OffersNotifie {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rectangle-7 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    flex-grow: 0;
+    padding: 0 0 0 0;
+    background-color: #fff5ec;
+    z-index: -1000;
+  }
+
+.pattern7 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 37.5vw;
+    z-index: -100;
+}
+
+.screen-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.screen-6 .logo2 {
+    width: 12.7vw;
+}
+.screen-6 h3 {
+    color: #332b25;
+    font-family: Poppins;
+    line-height: 1.33;
+    width: 27.8vw;
+    font-weight: normal;
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: capitalize;
+}
+.screen-6 p {
+    width: 37vw;
+    font-family: Poppins;
+    line-height: 1.67;
+    text-align: center;
+    text-transform: capitalize;
+    color: #707070;
+}
+.inputBox{
+    position: relative;
+    height: 60px;
+    width: 400px;
+}
+#form #email {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    outline: none;
+    border: none;
+    padding: 22.5px 32.5px;
+    border-radius: 30px;
+    width: 400px;
+    height: 60px;
+}
+.arrowBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    background-color: transparent;
+    border: none;
+}
+.arrowBtn  img{
+    width: 40px;
+}
+.ErrorMsg {
+    color: red !important;
+    opacity: .8;
+    margin-top: -2vh;
+    text-align: center;
+}
+.SuccessMsg {
+    color: green !important;
+    opacity: .8;
+    margin-top: -5.5vh;
+    text-align: center;
+}
+
+
+
+.FAQS {
+    display: flex;
+    gap: 1vw;
+    width: 22.5vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.FAQS li {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #707070;
+}
+.socialMeadiaIco {
+    display: flex;
+    gap: 1vw;
+}
+
+
+
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .screen-6 {
+        gap: 4vh;
+    }
+    .screen-6 .logo2 {
+        width: 12.7vw;
+    }
+    .screen-6 h3 {
+        width: 60vw;
+        font-size: 1.7em;
+    }
+    .screen-6 p {
+        width: 60vw;
+    }
+    .inputBox{
+        height: 45px;
+        width: 300px;
+    }
+    #form #email {
+        width: 300px;
+        height: 45px;
+    }
+    .arrowBtn {
+        right: 20px;
+    }
+    .arrowBtn  img {
+    width: 30px;
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .screen-6 {
+        gap: 4vh;
+    }
+    .screen-6 .logo2 {
+        width: 12.7vw;
+    }
+    .screen-6 h3 {
+        width: 60vw;
+        font-size: 1.7em;
+    }
+    .screen-6 p {
+        width: 60vw;
+    }
+    .inputBox{
+        height: 45px;
+        width: 300px;
+    }
+    #form #email {
+        width: 300px;
+        height: 45px;
+    }
+    .arrowBtn {
+        right: 20px;
+    }
+    .arrowBtn  img {
+    width: 30px;
+    }
+
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .screen-6 {
+        gap: 4vh;
+    }
+    .screen-6 .logo2 {
+        width: 12.7vw;
+    }
+    .screen-6 h3 {
+        width: 60vw;
+        font-size: 1.7em;
+    }
+    .screen-6 p {
+        width: 60vw;
+    }
+    .inputBox{
+        height: 45px;
+        width: 300px;
+    }
+    #form #email {
+        width: 300px;
+        height: 45px;
+    }
+    .arrowBtn {
+        right: 20px;
+    }
+    .arrowBtn  img {
+    width: 30px;
+    }    .inputBox{
+        height: 45px;
+        width: 300px;
+    }
+    #form #email {
+        width: 300px;
+        height: 45px;
+    }
+    .arrowBtn {
+        right: 20px;
+    }
+    .arrowBtn  img {
+    width: 30px;
+    }
+}

@@ -1,0 +1,162 @@
+.SignatureDishes {
+    position: relative;
+    height: 110vh;
+    width: 100%;
+}
+.Rectangle-5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 110vh;
+    flex-grow: 0;
+    padding: 0 0 0 0;
+    background-color: #fff5ec;
+    z-index: -1000;
+}
+.pattern5 {
+    position: absolute;
+    bottom: 2.5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+}
+.Screen-4-Header {
+    position: absolute;
+    top : 10vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.5vw;
+    background-color: transparent;
+}
+.Screen-4-Header p {
+    color: #707070;
+    max-width: 41vw;
+    font-family: Poppins;
+    line-height: 1.67;
+    text-align: left;
+    text-transform: capitalize;
+    color: #000;
+}
+.Screen-4-Header h1::before{
+    height: 180% !important;
+}
+.Screen-4-Header h1 {
+    width: 20vw;
+}
+.ownBowl {
+    position: absolute;
+    width: 77.5vw;
+    height: 62.5vh;
+    top: 35vh;
+    background-color: #ffdde1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.triangle-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 29vw solid #ffffff;
+    border-right: 75vw solid transparent;
+}
+.ownBowl .ownBowl-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    left: 2.5%;
+    top: 10%;
+    width: 31vw;
+    z-index: 100;
+}
+.ownBowl .ownBowl-left h2 {
+    font-family: K2D;
+    width: 26vw;
+    font-weight: 600;
+    color: #332b25;
+    font-size: 3.1vw;
+}
+.ownBowl .ownBowl-left p {
+    font-family: Roboto;
+    color: #332b25;
+    font-size: 2.1vw;
+}
+.ownBowl .ownBowl-left span {
+    font-family: Roboto;
+    font-size: 2vw;
+    width: fit-content;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background-color: #332b25;
+}
+.ownBowl .BowlImg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 29vw;
+    z-index: 100;
+}
+
+
+
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .Screen-4-Header {
+    top : 10vh;
+    flex-direction: column;
+    gap: 7.5vw;
+    align-items: flex-start;
+}
+.Screen-4-Header p {
+    max-width: 80vw;
+    font-size: 3vw;
+}
+
+    .ownBowl .ownBowl-left h2 {
+    width: 26vw;
+    font-size: 1.5em;
+}
+    .ownBowl .ownBowl-left p {
+        font-size: .8em;
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .Screen-4-Header {
+    top : 10vh;
+    gap: 7.5vw;
+}
+.Screen-4-Header p {
+    max-width: 60vw;
+}
+    .ownBowl .ownBowl-left h2 {
+    width: 26vw;
+    font-size: 1.9em;
+}
+    .ownBowl .ownBowl-left p {
+        font-size: 1.0em;
+    }
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.Screen-4-Header p {
+    max-width: 60vw;
+    align-items: flex-start;
+}
+    .ownBowl .ownBowl-left h2 {
+    width: 26vw;
+    font-size: 2.0em;
+}
+    .ownBowl .ownBowl-left p {
+        font-size: 1.2em;
+    }
+}

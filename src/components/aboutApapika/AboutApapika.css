@@ -1,0 +1,110 @@
+.AboutApapika {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.Rectangle-4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    flex-grow: 0;
+    padding: 0 0 0 0;
+    background-color: #fff5ec;
+    z-index: -1000;
+  }
+
+.Screen-5-text {
+    position: absolute;
+    top: 13vh;
+    display: flex;
+    width: 31.5vw;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.Screen-5-text p {
+    line-height: 1.67;
+    font-family: Poppins;
+    font-size: 1.2vw;
+}
+
+.Screen-5-text h1::before{
+    height: 180% !important;
+}
+.pattern6 {
+    position: absolute;
+    width: 40vw;
+    height: 90vh;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5.5vw;
+
+}
+.aboutImg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52.2vw;
+}
+
+
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .Screen-5-text {
+        top: 13vh;
+        display: flex;
+        width: 90vw;
+        flex-direction: row;
+        gap: 10vh;
+    }
+    .Screen-5-text p {
+        font-size: 1.2vw;
+    }
+    .Screen-5-text h1::before{
+        height: 40% !important;
+        top: -10%;
+        transform: translateY(0);
+
+    }
+    .aboutImg {
+        right: 0;
+        top: 65%;
+        transform: translateY(-50%);
+        width: 75vw;
+    }
+}
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .Screen-5-text {
+        top: 13vh;
+        display: flex;
+        width: 90vw;
+        flex-direction: row;
+        gap: 10vh;
+    }
+    .Screen-5-text p {
+        font-size: 1.2vw;
+    }
+    .Screen-5-text h1::before{
+        height: 40% !important;
+        top: -10%;
+        transform: translateY(0);
+
+    }
+    .aboutImg {
+        right: 0;
+        top: 65%;
+        transform: translateY(-50%);
+        width: 75vw;
+    }
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .Screen-5-text p {
+    font-size: 1.35vw;
+    }
+}

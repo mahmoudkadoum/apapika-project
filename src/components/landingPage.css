@@ -1,0 +1,142 @@
+
+.Rectangle-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 110vh;
+  flex-grow: 0;
+  margin: 0 0 0;
+  padding: 0 0 0 0;
+  background-color: #ffdde1;
+  z-index: -1000;
+}
+.Rectangle-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 120vh;
+  width: 26vw;
+  background-color: #332b25;
+}
+.sceren1 {
+  position: relative;
+  height: 100vh;
+  }
+.pattern1 {
+  position: absolute;
+  top: 20%;
+  left: 50.5%;
+  z-index: 100;
+  width: 22vw;
+}
+.meal1 {
+  position: absolute;
+  top: 17.5%;
+  left: 55%;
+  z-index: 1000;
+  width: 40vw;
+}
+.text1{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 45.5vw;
+  height: 35vh;
+}
+.text1 p {
+  font-family: 'K2D', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #332b25;
+}
+.text1 span {
+  top: 0;
+  left: 0;
+  transform: translateY(-17.5%);
+  position: absolute;
+  font-family: Poppins;
+  font-size: 120px;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2e266f;
+  opacity: 0.05;
+}
+
+
+
+
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .meal1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    TOP: 15%;
+    z-index: 1000;
+    width: 60vw;
+  }
+.text1 p {
+  font-size: 15px;
+  margin-top: 35vw;
+}
+.text1 span {
+  transform: translateY(32.5vw);
+  font-size: 30px;
+}
+.Rectangle-2 {
+  width: 35vw;
+}
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .meal1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 55%;
+    z-index: 1000;
+    width: 40vw;
+  }
+.text1 p {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.text1 span {
+  transform: translateY(-5.5%);
+  font-size: 60px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .meal1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 55%;
+    z-index: 1000;
+    width: 40vw;
+  }
+.text1 p {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.text1 span {
+  transform: translateY(-5.5%);
+  font-size: 60px;
+}
+}
