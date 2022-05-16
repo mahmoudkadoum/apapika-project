@@ -1,0 +1,100 @@
+/* <---------- Media Query ----------> */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .MobileNavbar ul {
+        position: relative;
+    }
+    .MobileNavbar ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 10px 0;
+        gap: 20px;
+        right: 0;
+        top: 17vh;
+        color: #fdafb8;
+        background-color: rgba(0, 0, 0, 0.616);
+        backdrop-filter: blur(5px);
+        box-shadow: 20px;
+        width: 100%;
+        border-top: 2px solid #fdafb8;
+    }
+    .MobileNavbar ul li a{
+        color: #ffd7dc;
+        padding-left: 15%;
+        font-weight: bold;
+    }
+    .MobileloginBtn {
+        color: #f73c52 !important;
+    }
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
+        .MobileNavbar ul {
+            position: relative;
+        }
+        .MobileNavbar ul {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            padding: 10px 0;
+            gap: 20px;
+            right: 0;
+            top: 17vh;
+            color: #fdafb8;
+            background-color: rgba(0, 0, 0, 0.616);
+            backdrop-filter: blur(5px);
+            box-shadow: 20px;
+            width: 100%;
+            border-top: 2px solid #fdafb8;
+        }
+        .MobileNavbar ul li a{
+            color: #ffd7dc;
+            padding-left: 15%;
+            font-weight: bold;
+        }
+        .MobileloginBtn {
+            color: #f73c52 !important;
+        }
+    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .MobileNavbar ul {
+        position: relative;
+    }
+    .MobileNavbar ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 10px 0;
+        gap: 20px;
+        right: 0;
+        top: 17vh;
+        color: #fdafb8;
+        background-color: rgba(0, 0, 0, 0.616);
+        backdrop-filter: blur(5px);
+        box-shadow: 20px;
+        width: 100%;
+        border-top: 2px solid #fdafb8;
+    }
+    .MobileNavbar ul li a{
+        color: #ffd7dc;
+        padding-left: 15%;
+        font-weight: bold;
+    }
+    .MobileloginBtn {
+        color: #f73c52 !important;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .MobileNavbar{
+        display: none;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .MobileNavbar{
+        display: none;
+    }
+}

@@ -22,12 +22,13 @@
 .sceren1 {
   position: relative;
   height: 100vh;
+  overflow: hidden;
   }
 .pattern1 {
   position: absolute;
   top: 20%;
   left: 50.5%;
-  z-index: 100;
+  z-index: -100;
   width: 22vw;
 }
 .meal1 {
@@ -80,63 +81,133 @@
 /* <---------- Media Query ----------> */
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
+  .Rectangle-1 {
+    height: 100vh;
+  }
+  .Rectangle-2 {
+    display: none;
+  }
   .meal1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    TOP: 15%;
+    TOP: 55vh;
     z-index: 1000;
-    width: 60vw;
+    width: 90vw;
+  }
+  .text1{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 70vw;
+    height: 35vh;
   }
 .text1 p {
-  font-size: 15px;
-  margin-top: 35vw;
+  font-size: 7.7vw;
+  margin-top: 0vw;
+  max-width: 90vw;
 }
 .text1 span {
-  transform: translateY(32.5vw);
-  font-size: 30px;
+  transform: translateY(2.5vh);
+  font-size: 15vw;
+  width: 90vw;
 }
 .Rectangle-2 {
   width: 35vw;
 }
-
+.pattern1 {
+display: none;
+}
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
+  .Rectangle-1 {
+    height: 100vh;
+  }
+  .Rectangle-2 {
+    display: none;
+  }
   .meal1 {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    TOP: 65vh;
     z-index: 1000;
-    width: 40vw;
+    width: 60vw;
+  }
+  .text1{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 70vw;
+    height: 35vh;
   }
 .text1 p {
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 7.7vw;
+  margin-top: 0vw;
+  max-width: 90vw;
 }
 .text1 span {
-  transform: translateY(-5.5%);
-  font-size: 60px;
+  transform: translateY(2.5vh);
+  font-size: 15vw;
+  width: 90vw;
 }
+.Rectangle-2 {
+  width: 35vw;
+}
+.pattern1 {
+  display: none;
+  }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
+  .Rectangle-1 {
+    height: 100vh;
+  }
+  .Rectangle-2 {
+    display: none;
+  }
+  .sceren1 {
+    padding: 0 6vw;
+}
   .meal1 {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    TOP: 65vh;
     z-index: 1000;
-    width: 40vw;
+    width: 60vw;
+  }
+  .text1{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 70vw;
+    height: 35vh;
   }
 .text1 p {
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 7.7vw;
+  margin-top: 0vw;
+  max-width: 90vw;
 }
 .text1 span {
-  transform: translateY(-5.5%);
-  font-size: 60px;
+  transform: translateY(2.5vh);
+  font-size: 15vw;
+  width: 90vw;
 }
+.Rectangle-2 {
+  width: 35vw;
+}
+.pattern1 {
+  display: none;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

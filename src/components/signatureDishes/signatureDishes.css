@@ -2,6 +2,7 @@
     position: relative;
     height: 110vh;
     width: 100%;
+    overflow: hidden;
 }
 .Rectangle-5 {
     position: absolute;
@@ -61,8 +62,8 @@
     left: 0;
     width: 0;
     height: 0;
-    border-top: 29vw solid #ffffff;
-    border-right: 75vw solid transparent;
+    border-top: 52vh solid #ffffff;
+    border-right: 77.5vw solid transparent;
 }
 .ownBowl .ownBowl-left {
     position: absolute;
@@ -110,6 +111,12 @@
 /* <---------- Media Query ----------> */
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
+    .SignatureDishes {
+        height: 100vh;
+    }
+    .Rectangle-5 {
+        height: 100vh;
+    }
     .Screen-4-Header {
     top : 10vh;
     flex-direction: column;
@@ -118,45 +125,107 @@
 }
 .Screen-4-Header p {
     max-width: 80vw;
-    font-size: 3vw;
+    font-size: 2.2vh;
+}
+.ownBowl {
+    width: 77.5vw;
+    height: 50.5vh;
+    top: 45vh;
 }
 
     .ownBowl .ownBowl-left h2 {
     width: 26vw;
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
-    .ownBowl .ownBowl-left p {
+.ownBowl .ownBowl-left p {
         font-size: .8em;
+    }
+    .ownBowl .ownBowl-left span {
+        font-size: 2vh;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    .ownBowl .BowlImg {
+        width: 40vw;
     }
 }
   /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
+    .SignatureDishes {
+        height: 100vh;
+    }
+    .Rectangle-5 {
+        height: 100vh;
+    }
     .Screen-4-Header {
     top : 10vh;
+    flex-direction: column;
     gap: 7.5vw;
+    align-items: flex-start;
 }
 .Screen-4-Header p {
-    max-width: 60vw;
+    max-width: 80vw;
+    font-size: 2.2vh;
 }
+.ownBowl {
+    width: 77.5vw;
+    height: 50.5vh;
+    top: 45vh;
+}
+
     .ownBowl .ownBowl-left h2 {
     width: 26vw;
-    font-size: 1.9em;
+    font-size: 1.0em;
 }
-    .ownBowl .ownBowl-left p {
-        font-size: 1.0em;
+.ownBowl .ownBowl-left p {
+        font-size: .8em;
+    }
+    .ownBowl .ownBowl-left span {
+        font-size: 2vh;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    .ownBowl .BowlImg {
+        width: 40vw;
     }
 }
   /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-.Screen-4-Header p {
-    max-width: 60vw;
+    .SignatureDishes {
+        height: 100vh;
+    }
+    .Rectangle-5 {
+        height: 100vh;
+    }
+    .Screen-4-Header {
+    top : 10vh;
+    flex-direction: column;
+    gap: 7.5vw;
     align-items: flex-start;
 }
+.Screen-4-Header p {
+    max-width: 80vw;
+    font-size: 2.2vh;
+}
+.ownBowl {
+    width: 77.5vw;
+    height: 50.5vh;
+    top: 45vh;
+}
+
     .ownBowl .ownBowl-left h2 {
     width: 26vw;
-    font-size: 2.0em;
+    font-size: 1.0em;
 }
-    .ownBowl .ownBowl-left p {
-        font-size: 1.2em;
+.ownBowl .ownBowl-left p {
+        font-size: .8em;
+    }
+    .ownBowl .ownBowl-left span {
+        font-size: 2vh;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    .ownBowl .BowlImg {
+        width: 40vw;
     }
 }

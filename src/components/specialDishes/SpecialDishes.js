@@ -40,17 +40,15 @@ const SpecialDishes = () => {
     return (
         <div className='SpecialDishes'>
             <div className="Rectangle-3"> </div>
-            <div className='container'>
-                <div className="Screen-2-Header">
-                    <h1>
-                        Hier siehst du eine auswahl aus unsere Signature Bowls
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
-                        adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
-                        donec vestibulum tristique leo bibendum in a, tincidunt. 
-                    </p>
-                </div>
+            <div className="Screen-2-Header container">
+                <h1>
+                    Hier siehst du eine auswahl aus unsere Signature Bowls
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+                    adipiscing cursus auctor eget sed phasellus senectus. Ut tellus
+                    donec vestibulum tristique leo bibendum in a, tincidunt. 
+                </p>
             </div>
             <div className="dishesContainer">
                 {meals.length && meals.map(dishes)}

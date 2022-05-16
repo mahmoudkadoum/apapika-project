@@ -2,6 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 .Rectangle-4 {
     position: absolute;
@@ -14,6 +15,15 @@
     background-color: #fff5ec;
     z-index: -1000;
 }
+.triangle-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100vh solid #ffdde1;
+    border-right: 98.5vw solid transparent;
+  }
 .pattern4 {
     position: absolute;
     top: 7.5vh;
@@ -60,43 +70,105 @@
 /* <---------- Media Query ----------> */
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
-    .screen-3 .left p{
-        max-width: 40vw;
-        font-size: .9em;
-    }
-    .screen-3 h1 {
-        max-width: 40vw;
-    }
-    .screen-3 .mobileMokup {
-        width: 24vw;
-        margin-top: 5vh;
-    }
+.screen-3 {
+    gap: 0vw;
+}
+.Screen-3-Header{
+    width: 50vw;
+}
+.screen-3 .left{
+    gap: 20vw;
+}
+.screen-3 .left p{
+    max-width: 40vw;
+    font-size: .9em;
+}
+.screen-3 .left .downloadBtns {
+    gap: 1vw;
+}
+.screen-3 .left .downloadBtns .Btn {
+    width: 25vw;
+}
+.screen-3 .mobileMokup {
+    width: 45vw;
+    margin-top: 5vh;
+    transform: translateX(-10vw);
+}
+.pattern4 {
+    display: none;
+}
+
 }
   /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
+    .screen-3 {
+        gap: 0vw;
+    }
+    .Screen-3-Header{
+        width: 50vw;
+    }
+    .screen-3 .left{
+        gap: 20vw;
+    }
     .screen-3 .left p{
         max-width: 40vw;
         font-size: .9em;
     }
-    .screen-3 h1 {
-        max-width: 40vw;
+    .screen-3 .left .downloadBtns {
+        gap: 1vw;
+    }
+    .screen-3 .left .downloadBtns .Btn {
+        width: 25vw;
     }
     .screen-3 .mobileMokup {
-        width: 24vw;
+        width: 45vw;
         margin-top: 5vh;
+        transform: translateX(-10vw);
+    }
+    .pattern4 {
+        display: none;
     }
 }
   /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .screen-3 {
+        gap: 0vw;
+    }
+    .Screen-3-Header{
+        width: 50vw;
+    }
+    .screen-3 .left{
+        gap: 15vw;
+    }
     .screen-3 .left p{
         max-width: 40vw;
-        font-size: .9em;
+        font-size: 1.9em;
     }
     .screen-3 h1 {
-        max-width: 40vw;
+        max-width: 50vw;
+        font-size: 4.5vw !important;
+    }
+    .screen-3 .left .downloadBtns {
+        display: flex;
+        gap: 1vw;
+    }
+    .screen-3 .left .downloadBtns .Btn {
+        width: 25vw;
     }
     .screen-3 .mobileMokup {
-        width: 24vw;
+        width: 45vw;
         margin-top: 5vh;
+        transform: translateX(-0vw);
     }
+    .pattern4 {
+        display: none;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

@@ -8,7 +8,7 @@ const AboutApapika = () => {
 return (
     <div className='AboutApapika'>
         <div className="Rectangle-6"> </div>
-        <div className="triangle-2"></div>
+        <div className="triangle-About"></div>
         <img className="pattern6" src={images.pattern6} alt="" />
             <div className="screen-5 container">
                 <div className="Screen-5-text">

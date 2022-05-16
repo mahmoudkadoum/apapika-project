@@ -54,15 +54,7 @@ h1::before {
   padding-right: 7vw;
   margin: auto;
 }
-.triangle-2{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 48vw solid #ffdde1;
-  border-right: 98.5vw solid transparent;
-}
+
 
 
 
@@ -73,17 +65,18 @@ h1::before {
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
   .container {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
   }
   h1 {
     width: 70vw;
     margin-left: 8vw;
     font-size: 1.2em;
+    z-index: 1000;
   }
   h1::before {
     height: 115%;
-    width: 2.6vh;
+    width: 2.0vh;
     left: -8vw;
     top: 50%;
     transform: translateY(-50%);
@@ -96,9 +89,16 @@ h1::before {
     padding-right: 4vw;
   }
   h1 {
-    width: 50vw;
-    margin-left: 3vw;
-    font-size: 1.3em;
+    width: 70vw;
+    margin-left: 8vw;
+    font-size: 1.2em;
+  }
+  h1::before {
+    height: 115%;
+    width: 2.0vh;
+    left: -8vw;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -108,9 +108,16 @@ h1::before {
     padding-right: 4vw;
   }
   h1 {
-    width: 40vw;
-    margin-left: 3vw;
-    font-size: 1.4em;
+    width: 70vw;
+    margin-left: 8vw;
+    font-size: 1.2em;
+  }
+  h1::before {
+    height: 115%;
+    width: 2.0vh;
+    left: -8vw;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */

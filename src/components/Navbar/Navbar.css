@@ -15,7 +15,7 @@
     padding: 5vh 0;
   }
 
-  .image-2{
+  .logo{
     width: 12.7vw;
   }
   .header-area .links {
@@ -63,69 +63,59 @@
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
   }
-
+  .Hamburger {
+    display: none;
+  }
+  
 /* <---------- Media Query ----------> */
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
-  .image-2{
-    width: 10.7vw;
+  .logo{
+    width: 38.5vw;
   }
   .header-area .links {
-    font-size: 10px;
-    max-width: 40vw;
-    margin-left: 10px;
+    display: none;
   }
   .endNav {
-    gap: 0px;
+    display: none;
   }
-  .cartIco {
-    width: 15px;
-  }
-  .loginBtn {
-    padding: 10px 20px;
-    border-radius: 40px;
-    font-size: 8px;
-    margin-left: 15px;
+  .Hamburger{
+    display: block;
+    cursor: pointer;
   }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 601px) and (max-width: 767px) {
-    .image-2{
-      width: 10.7vw;
+    .logo{
+      width: 30vw;
     }
     .header-area .links {
-      font-size: 10px;
-      max-width: 35vw;
-      margin-left: 20px;
+      display: none;
     }
     .endNav {
-      gap: 0px;
+      display: none;
     }
-    .cartIco {
-      width: 20px;
-    }
-    .loginBtn {
-      padding: 12.5px 27.5px;
-      border-radius: 40px;
-      font-size: 8px;
-      margin-left: 15px;
+    .Hamburger{
+      display: block;
+      cursor: pointer;
     }
   }
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .image-2{
-      width: 10.7vw;
+    .logo{
+      width: 30vw;
+    }
+    .header-area {
+      padding: 5vh 4vw;
+    }
+    .header-area .links {
+      display: none;
     }
     .endNav {
-      gap: 0px;
+      display: none;
     }
-    .cartIco {
-      width: 25px;
-    }
-    .loginBtn {
-      padding: 15px 35px;
-      border-radius: 40px;
-      font-size: 8px;
-      margin-left: 15px;
+    .Hamburger{
+      display: block;
+      cursor: pointer;
     }
   }
